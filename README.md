@@ -31,7 +31,7 @@ are separated under “История MR”, with an explanation.
   and bounded readable job traces. Pipeline SHA is compared to local HEAD.
 - Published branch commit history, refresh, and 30-second polling while visible.
 - Insert a review comment, MR or job log into the chat draft, without auto-send.
-- Read-only `gitlab_branch` tool and `bb gitlab branch [--thread <id>]` command.
+- Read-only `gitlab_branch` tool and `bb gitlab-branch branch [--thread <id>]` command.
 
 ## Install
 

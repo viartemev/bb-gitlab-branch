@@ -103,7 +103,7 @@ test("compact panel supports stage graphs, persistent paginated reviews, search,
     { component: GitLabTab },
     { threadId: "t1", environment: { id: "env1" } },
     {
-      pluginId: "gitlab",
+      pluginId: "gitlab-branch",
       composer: {
         scope: { kind: "thread", threadId: "t1" },
         text: "Investigate",
@@ -365,7 +365,7 @@ test("MR pipeline status waits for MR data and stays stable during refresh", asy
     { component: GitLabTab },
     { threadId: "t1", environment: { id: "env1" } },
     {
-      pluginId: "gitlab",
+      pluginId: "gitlab-branch",
       rpc: {
         snapshot: () => ({
           ...snapshot,

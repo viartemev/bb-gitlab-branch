@@ -248,7 +248,7 @@ export default function plugin(bb: BbPluginApi) {
   });
   bb.cli.register(
     defineCli({
-      name: "gitlab",
+      name: "gitlab-branch",
       summary: "Read GitLab information for a thread's current branch",
       commands: {
         branch: cliCommand({

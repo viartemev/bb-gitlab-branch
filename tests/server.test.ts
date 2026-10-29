@@ -20,7 +20,7 @@ test("server resolves the thread environment's machine and keeps settings out of
     warnings: [],
   };
   const { bb, harness } = createFakePluginHost({
-    pluginId: "gitlab",
+    pluginId: "gitlab-branch",
     experimental_hostEntry: true,
     settings: { token: "secret", hostname: "gitlab.example.test" },
     sdk: {
@@ -74,7 +74,7 @@ test("server resolves the thread environment's machine and keeps settings out of
 });
 test("no environment produces an actionable error without host calls", async () => {
   const { bb, harness } = createFakePluginHost({
-    pluginId: "gitlab",
+    pluginId: "gitlab-branch",
     experimental_hostEntry: true,
     sdk: {
       threads: { get: async () => makeThreadResponse({ environmentId: null }) },

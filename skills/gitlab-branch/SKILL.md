@@ -1,5 +1,5 @@
 ---
-name: gitlab
+name: gitlab-branch
 description: Read the current BB branch's GitLab merge requests, review discussions, pipelines and job logs.
 ---
 
@@ -8,7 +8,7 @@ description: Read the current BB branch's GitLab merge requests, review discussi
 Open the GitLab tab in the thread side panel, or the GitLab header action.
 The plugin detects the actual worktree, upstream remote and remote branch.
 
-`bb gitlab branch [--thread <thread-id>]` reads the branch, merge requests and
+`bb gitlab-branch branch [--thread <thread-id>]` reads the branch, merge requests and
 branch pipelines as JSON. The `gitlab_branch` agent tool reads the current thread.
 The `gitlab_mr`, `gitlab_discussions`, `gitlab_mr_pipelines`, `gitlab_jobs`,
 and `gitlab_job_log` tools read additional details using the checkout key and IDs

@@ -1,0 +1,46 @@
+{
+  "name": "bb-plugin-gitlab",
+  "version": "0.2.3",
+  "type": "module",
+  "license": "MIT",
+  "description": "GitLab merge requests, discussions and CI for the current BB branch.",
+  "engines": {
+    "bb": ">=0.48",
+    "bbPluginSdk": ">=0.6.94"
+  },
+  "bb": {
+    "name": "GitLab Branch",
+    "description": "Current branch, merge requests, review discussions, pipelines, jobs and logs beside the conversation.",
+    "branding": {
+      "icon": "GitBranch"
+    },
+    "server": "./server.ts",
+    "host": "./host.ts",
+    "app": "./app.tsx"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.94",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "tsx": "^4.20.0",
+    "@testing-library/react": "^16.3.3",
+    "jsdom": "^30.1.3",
+    "@types/jsdom": "^30.0.0",
+    "better-sqlite3": "^13.0.3",
+    "@types/better-sqlite3": "^7.6.12",
+    "cron-parser": "^5.5.0",
+    "hono": "^4.11.9"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "bb plugin build"
+  }
+}

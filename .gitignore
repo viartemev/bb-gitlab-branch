@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.log
+
+preview/preview.js
+preview/preview.css
